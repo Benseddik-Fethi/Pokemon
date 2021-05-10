@@ -1,4 +1,6 @@
 package fr.pokemon.model;
 
-public class Pokemon {
+public abstract class Pokemon {
+    private int id;
+
 }
