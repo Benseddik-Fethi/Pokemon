@@ -1,37 +1,37 @@
 package fr.pokemon.model.pokemon;
 
-import fr.pokemon.interfaces.Plante;
+
+import fr.pokemon.interfaces.Feu;
 import fr.pokemon.model.Pokemon;
 
-public class Florizarre extends Pokemon implements Plante {
-    public Florizarre(String nom) {
+public class Goupix extends Pokemon implements Feu {
+    public Goupix(String nom) {
         super(nom);
-        this.setAttaque(7);
-        this.setDefense(10);
-        this.setPdv(165);
+        this.setAttaque(5);
+        this.setDefense(4);
+        this.setPdv(100);
     }
-
-    public Florizarre(String nom, int niveau) {
+    public Goupix(String nom, int niveau) {
         super(nom, niveau);
     }
 
     @Override
-    public int tempeteVerte() {
+    public int flameche() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;
     }
 
     @Override
-    public int fouetLianes() {
+    public int lanceFlamme() {
         return (this.getNiveau()* this.getAttaque() * 2) /5;
     }
 
     @Override
-    public int tranchHerbe() {
+    public int rebondiFeu() {
         return (this.getNiveau()* this.getAttaque() * 3) /5;
     }
 
     @Override
-    public int canonGraine() {
+    public int deflagration() {
         return (this.getNiveau()* this.getAttaque() * 4) /5;
     }
 }

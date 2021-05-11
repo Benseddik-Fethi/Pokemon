@@ -3,6 +3,19 @@ package fr.pokemon.enumeration;
 public enum TypePokemon {
     FEU,
     PLANTE,
+    EAU,
     ELECTRIQUE,
-    EAU
+
+    COMBAT,
+    DRAGON,
+    GLACE,
+    INSECTE,
+    NORMAL,
+    POISON,
+    PSY,
+    ROCHE,
+    SOL,
+    SPECTRE,
+    VOL
+
 }

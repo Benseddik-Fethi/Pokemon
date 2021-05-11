@@ -11,6 +11,10 @@ public class Dracaufeu extends Pokemon implements Feu {
         this.setPdv(150);
     }
 
+    public Dracaufeu(String nom, int niveau) {
+        super(nom, niveau);
+    }
+
     @Override
     public int flameche() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;

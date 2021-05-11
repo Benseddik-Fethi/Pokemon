@@ -1,37 +1,38 @@
 package fr.pokemon.model.pokemon;
 
-import fr.pokemon.interfaces.Plante;
+import fr.pokemon.interfaces.Poison;
+import fr.pokemon.interfaces.Vol;
 import fr.pokemon.model.Pokemon;
 
-public class Florizarre extends Pokemon implements Plante {
-    public Florizarre(String nom) {
+public class Arbok extends Pokemon implements Poison {
+    public Arbok(String nom) {
         super(nom);
         this.setAttaque(7);
-        this.setDefense(10);
-        this.setPdv(165);
+        this.setDefense(8);
+        this.setPdv(160);
     }
 
-    public Florizarre(String nom, int niveau) {
+    public Arbok(String nom, int niveau) {
         super(nom, niveau);
     }
 
     @Override
-    public int tempeteVerte() {
+    public int dardVenin() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;
     }
 
     @Override
-    public int fouetLianes() {
+    public int directToxik() {
         return (this.getNiveau()* this.getAttaque() * 2) /5;
     }
 
     @Override
-    public int tranchHerbe() {
+    public int acide() {
         return (this.getNiveau()* this.getAttaque() * 3) /5;
     }
 
     @Override
-    public int canonGraine() {
+    public int detriCanon() {
         return (this.getNiveau()* this.getAttaque() * 4) /5;
     }
 }

@@ -3,15 +3,15 @@ package fr.pokemon.model.pokemon;
 import fr.pokemon.interfaces.Plante;
 import fr.pokemon.model.Pokemon;
 
-public class Florizarre extends Pokemon implements Plante {
-    public Florizarre(String nom) {
+public class Mystherbe extends Pokemon implements Plante {
+    public Mystherbe(String nom) {
         super(nom);
-        this.setAttaque(7);
-        this.setDefense(10);
-        this.setPdv(165);
+        this.setAttaque(4);
+        this.setDefense(5);
+        this.setPdv(100);
     }
 
-    public Florizarre(String nom, int niveau) {
+    public Mystherbe(String nom, int niveau) {
         super(nom, niveau);
     }
 

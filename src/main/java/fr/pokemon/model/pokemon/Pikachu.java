@@ -11,6 +11,10 @@ public class Pikachu extends Pokemon implements Electrique {
         this.setPdv(110);
     }
 
+    public Pikachu(String nom, int niveau) {
+        super(nom, niveau);
+    }
+
     @Override
     public int eclair() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;
