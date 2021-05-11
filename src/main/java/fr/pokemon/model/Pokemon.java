@@ -1,7 +1,7 @@
 package fr.pokemon.model;
-import fr.pokemon.model.pokemon.Dracaufeu;
-import fr.pokemon.model.pokemon.Reptincel;
+import fr.pokemon.model.pokemon.*;
 import lombok.Data;
+import fr.pokemon.exception.EvolutionException;
 
 @Data
 public abstract class Pokemon {
@@ -36,14 +36,25 @@ public abstract class Pokemon {
         }
     }
 
-    private Pokemon evoluer(Pokemon pokemon){
+    private Pokemon evoluer(Pokemon pokemon) throws Exception{
        switch (pokemon.getClass().getSimpleName()){
            case "Salameche":
                return new Reptincel(pokemon.getNom());
            case "Reptincel":
                return new Dracaufeu(pokemon.getNom());
+           case "Pikachi":
+               return new Raichu(pokemon.getNom());
+           case "Carapuce":
+               return new Carabaffe(pokemon.getNom());
+           case "Carabaffe":
+               return new Tortank(pokemon.getNom());
+           case "Bulbizarre":
+               return new Herbizarre(pokemon.getNom());
+           case "Herbizarre":
+               return new Florizarre(pokemon.getNom()):
                default:
-                   return pokemon;
+             throw new EvolutionException("Evolution impossible");
+
        }
     }
 }
