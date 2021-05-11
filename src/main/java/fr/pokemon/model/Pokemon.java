@@ -20,8 +20,12 @@ public abstract class Pokemon {
         this.experience = 0;
     }
 
-
-
+    public Pokemon(String nom, int niveau) {
+        this.nom = nom;
+        this.niveau = niveau;
+        this.pdv = this.getPdv() + (50 * niveau);
+        this.experience = 0;
+    }
 
     public void gagnerXp(int gainXp) {
         if (this.experience + gainXp >= 100) {
