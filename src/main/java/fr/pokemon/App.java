@@ -6,6 +6,8 @@ import fr.pokemon.model.*;
 import fr.pokemon.model.donjon.Donjon;
 import fr.pokemon.model.donjon.DonjonProxy;
 import fr.pokemon.model.pokemon.Salameche;
+
+import javax.xml.transform.sax.SAXSource;
 import java.util.HashMap;
 
 public class App {
@@ -14,6 +16,7 @@ public class App {
         System.out.println(sal.getAttaque());
         System.out.println(sal.flameche());
         sal.gagnerXp(350);
+        System.out.println(sal.getPdv());
         System.out.println(sal.getNiveau());
         System.out.println(sal.getExperience());
         System.out.println(sal.flameche());
