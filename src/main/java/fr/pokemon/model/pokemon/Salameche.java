@@ -12,6 +12,10 @@ public class Salameche extends Pokemon implements Feu {
         this.setPdv(100);
     }
 
+    public Salameche(String nom, int niveau) {
+        super(nom, niveau);
+    }
+
     @Override
     public int flameche() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;

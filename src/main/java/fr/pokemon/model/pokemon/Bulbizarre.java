@@ -11,6 +11,10 @@ public class Bulbizarre extends Pokemon implements Plante {
         this.setPdv(100);
     }
 
+    public Bulbizarre(String nom, int niveau) {
+        super(nom, niveau);
+    }
+
     @Override
     public int tempeteVerte() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;

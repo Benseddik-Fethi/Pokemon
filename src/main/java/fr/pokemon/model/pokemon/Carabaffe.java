@@ -11,6 +11,10 @@ public class Carabaffe extends Pokemon implements Eau {
         this.setPdv(120);
     }
 
+    public Carabaffe(String nom, int niveau) {
+        super(nom, niveau);
+    }
+
     @Override
     public int pistoletAEau() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;

@@ -11,6 +11,10 @@ public class Carapuce extends Pokemon implements Eau {
         this.setPdv(100);
     }
 
+    public Carapuce(String nom, int niveau) {
+        super(nom, niveau);
+    }
+
     @Override
     public int pistoletAEau() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;

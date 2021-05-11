@@ -11,6 +11,10 @@ public class Tortank extends Pokemon implements Eau {
         this.setPdv(160);
     }
 
+    public Tortank(String nom, int niveau) {
+        super(nom, niveau);
+    }
+
     @Override
     public int pistoletAEau() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;
