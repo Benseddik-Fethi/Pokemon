@@ -1,7 +1,9 @@
-package fr.pokemon.model;
+package fr.pokemon.model.donjon;
 
 import fr.pokemon.exception.NiveauTropBasException;
 import fr.pokemon.interfaces.IDonjon;
+import fr.pokemon.model.Dresseur;
+import fr.pokemon.model.donjon.Donjon;
 
 public class DonjonProxy implements IDonjon {
 

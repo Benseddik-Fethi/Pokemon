@@ -3,6 +3,8 @@ package fr.pokemon;
 
 import fr.pokemon.exception.NiveauTropBasException;
 import fr.pokemon.model.*;
+import fr.pokemon.model.donjon.Donjon;
+import fr.pokemon.model.donjon.DonjonProxy;
 import fr.pokemon.model.pokemon.Salameche;
 import java.util.HashMap;
 
