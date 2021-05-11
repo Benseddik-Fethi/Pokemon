@@ -1,37 +1,35 @@
 package fr.pokemon.model.pokemon;
 
-import fr.pokemon.interfaces.Plante;
+import fr.pokemon.interfaces.Normal;
 import fr.pokemon.model.Pokemon;
 
-public class Florizarre extends Pokemon implements Plante {
-    public Florizarre(String nom) {
+public class Grodoudou extends Pokemon implements Normal {
+    public Grodoudou(String nom) {
         super(nom);
         this.setAttaque(7);
-        this.setDefense(10);
-        this.setPdv(165);
+        this.setDefense(8);
+        this.setPdv(160);
     }
-
-    public Florizarre(String nom, int niveau) {
+    public Grodoudou(String nom, int niveau) {
         super(nom, niveau);
     }
-
     @Override
-    public int tempeteVerte() {
+    public int charge() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;
     }
 
     @Override
-    public int fouetLianes() {
+    public int furie() {
         return (this.getNiveau()* this.getAttaque() * 2) /5;
     }
 
     @Override
-    public int tranchHerbe() {
+    public int vengeance() {
         return (this.getNiveau()* this.getAttaque() * 3) /5;
     }
 
     @Override
-    public int canonGraine() {
+    public int ultralaser() {
         return (this.getNiveau()* this.getAttaque() * 4) /5;
     }
 }

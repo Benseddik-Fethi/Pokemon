@@ -1,37 +1,36 @@
 package fr.pokemon.model.pokemon;
 
-import fr.pokemon.interfaces.Plante;
+import fr.pokemon.interfaces.Insecte;
 import fr.pokemon.model.Pokemon;
 
-public class Florizarre extends Pokemon implements Plante {
-    public Florizarre(String nom) {
+public class Chrysacier extends Pokemon implements Insecte {
+    public Chrysacier(String nom) {
         super(nom);
-        this.setAttaque(7);
+        this.setAttaque(2);
         this.setDefense(10);
-        this.setPdv(165);
+        this.setPdv(150);
     }
 
-    public Florizarre(String nom, int niveau) {
+    public Chrysacier(String nom, int niveau) {
         super(nom, niveau);
     }
-
     @Override
-    public int tempeteVerte() {
+    public int taillade() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;
     }
 
     @Override
-    public int fouetLianes() {
+    public int vampirisme() {
         return (this.getNiveau()* this.getAttaque() * 2) /5;
     }
 
     @Override
-    public int tranchHerbe() {
+    public int doubleDard() {
         return (this.getNiveau()* this.getAttaque() * 3) /5;
     }
 
     @Override
-    public int canonGraine() {
+    public int dardMortel() {
         return (this.getNiveau()* this.getAttaque() * 4) /5;
     }
 }

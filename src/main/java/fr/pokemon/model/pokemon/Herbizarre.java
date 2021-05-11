@@ -11,6 +11,10 @@ public class Herbizarre extends Pokemon  implements Plante {
         this.setPdv(130);
     }
 
+    public Herbizarre(String nom, int niveau) {
+        super(nom, niveau);
+    }
+
     @Override
     public int tempeteVerte() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;
