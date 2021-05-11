@@ -1,4 +1,6 @@
 package fr.pokemon.model;
+import fr.pokemon.model.pokemon.Dracaufeu;
+import fr.pokemon.model.pokemon.Reptincel;
 import lombok.Data;
 
 @Data
@@ -13,6 +15,7 @@ public abstract class Pokemon {
     private int niveau;
     private int experience;
 
+
     public Pokemon(String nom) {
         this.nom = nom;
         this.niveau = 1;
@@ -26,10 +29,21 @@ public abstract class Pokemon {
         if (this.experience + gainXp >= 100) {
             int prorata = (this.experience + gainXp) -100;
             this.niveau++;
-            this.experience = prorata;
             System.out.println("Nouveau niveau => " + this.niveau );
+            gagnerXp(prorata);
         } else {
             this.experience += gainXp;
         }
+    }
+
+    private Pokemon evoluer(Pokemon pokemon){
+       switch (pokemon.getClass().getSimpleName()){
+           case "Salameche":
+               return new Reptincel(pokemon.getNom());
+           case "Reptincel":
+               return new Dracaufeu(pokemon.getNom());
+               default:
+                   return pokemon;
+       }
     }
 }

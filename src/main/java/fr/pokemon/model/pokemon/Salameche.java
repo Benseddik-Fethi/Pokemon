@@ -1,7 +1,8 @@
-package fr.pokemon.model;
+package fr.pokemon.model.pokemon;
 
 
 import fr.pokemon.interfaces.Feu;
+import fr.pokemon.model.Pokemon;
 
 public class Salameche extends Pokemon implements Feu {
     public Salameche(String nom) {
