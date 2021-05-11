@@ -11,6 +11,10 @@ public class Raichu extends Pokemon implements Electrique {
         this.setPdv(145);
     }
 
+    public Raichu(String nom, int niveau) {
+        super(nom, niveau);
+    }
+
     @Override
     public int eclair() {
         return (this.getNiveau()* this.getAttaque() * 1) /5;

@@ -10,6 +10,9 @@ public class Reptincel extends Pokemon implements Feu {
         this.setDefense(6);
         this.setPdv(125);
     }
+    public Reptincel(String nom, int niveau) {
+        super(nom, niveau);
+    }
 
     @Override
     public int flameche() {
