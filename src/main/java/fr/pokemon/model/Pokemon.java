@@ -27,6 +27,7 @@ public abstract class Pokemon {
         if (this.experience + gainXp >= 100) {
             int prorata = (this.experience + gainXp) -100;
             this.niveau++;
+            this.setPdv(this.getPdv() + 50);
             System.out.println("Nouveau niveau => " + this.niveau );
             gagnerXp(prorata);
         } else {
