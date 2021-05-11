@@ -13,6 +13,9 @@ public class Paras extends Pokemon implements Poison {
 
     public Paras(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(4);
+        this.setDefense(4);
+        this.setPdv(100+ (50 * niveau)) ;
     }
     @Override
     public int dardVenin() {

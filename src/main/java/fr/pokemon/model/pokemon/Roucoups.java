@@ -13,6 +13,9 @@ public class Roucoups extends Pokemon implements Vol {
 
     public Roucoups(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(6);
+        this.setDefense(4);
+        this.setPdv(130+ (50 * niveau)) ;
     }
     @Override
     public int tranchAir() {

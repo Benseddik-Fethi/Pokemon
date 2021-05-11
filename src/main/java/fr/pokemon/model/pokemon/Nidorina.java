@@ -13,6 +13,9 @@ public class Nidorina extends Pokemon implements Poison {
 
     public Nidorina(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(7);
+        this.setDefense(6);
+        this.setPdv(120+ (50 * niveau)) ;
     }
     @Override
     public int dardVenin() {

@@ -13,6 +13,9 @@ public class Tortank extends Pokemon implements Eau {
 
     public Tortank(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(8);
+        this.setDefense(8);
+        this.setPdv(160+ (50 * niveau)) ;
     }
 
     @Override

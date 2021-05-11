@@ -12,7 +12,10 @@ public class Abo extends Pokemon implements Poison {
     }
 
     public Abo(String nom, int niveau) {
-        super(nom, niveau);
+        super(nom);
+        this.setAttaque(4);
+        this.setDefense(4);
+        this.setPdv(100+ (50 * niveau)) ;
     }
 
     @Override

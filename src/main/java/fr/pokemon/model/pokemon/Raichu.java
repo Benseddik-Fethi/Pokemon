@@ -13,6 +13,9 @@ public class Raichu extends Pokemon implements Electrique {
 
     public Raichu(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(9);
+        this.setDefense(8);
+        this.setPdv(145 + (50 * niveau)) ;
     }
 
     @Override

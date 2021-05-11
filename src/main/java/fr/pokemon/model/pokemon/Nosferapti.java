@@ -13,6 +13,9 @@ public class Nosferapti extends Pokemon implements Poison {
 
     public Nosferapti(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(4);
+        this.setDefense(4);
+        this.setPdv(100+ (50 * niveau)) ;
     }
 
     @Override
