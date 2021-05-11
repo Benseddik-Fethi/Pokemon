@@ -10,8 +10,6 @@ public abstract class Pokemon {
     private int pdv;
     private int attaque;
     private int defense;
-    private int defensespe;
-    private int attaquespe;
     private int niveau;
     private int experience;
 
@@ -51,7 +49,7 @@ public abstract class Pokemon {
            case "Bulbizarre":
                return new Herbizarre(pokemon.getNom());
            case "Herbizarre":
-               return new Florizarre(pokemon.getNom()):
+               return new Florizarre(pokemon.getNom());
                default:
              throw new EvolutionException("Evolution impossible");
 
