@@ -13,6 +13,9 @@ public class NidoranM extends Pokemon implements Poison {
 
     public NidoranM(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(5);
+        this.setDefense(4);
+        this.setPdv(100+ (50 * niveau)) ;
     }
     @Override
     public int dardVenin() {

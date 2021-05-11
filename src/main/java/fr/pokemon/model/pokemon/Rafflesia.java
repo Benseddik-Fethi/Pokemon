@@ -13,6 +13,9 @@ public class Rafflesia extends Pokemon implements Plante {
 
     public Rafflesia(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(7);
+        this.setDefense(10);
+        this.setPdv(165 + (50 * niveau)) ;
     }
 
     @Override

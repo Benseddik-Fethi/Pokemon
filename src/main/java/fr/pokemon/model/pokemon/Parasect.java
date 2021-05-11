@@ -13,6 +13,9 @@ public class Parasect extends Pokemon implements Poison {
 
     public Parasect(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(7);
+        this.setDefense(8);
+        this.setPdv(160+ (50 * niveau)) ;
     }
 
     @Override

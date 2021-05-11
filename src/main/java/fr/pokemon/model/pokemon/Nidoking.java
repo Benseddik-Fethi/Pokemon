@@ -13,6 +13,9 @@ public class Nidoking extends Pokemon implements Poison {
 
     public Nidoking(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(8);
+        this.setDefense(8);
+        this.setPdv(160+ (50 * niveau)) ;
     }
     @Override
     public int dardVenin() {

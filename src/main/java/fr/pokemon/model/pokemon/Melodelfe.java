@@ -12,6 +12,9 @@ public class Melodelfe extends Pokemon implements Normal {
     }
     public Melodelfe(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(7);
+        this.setDefense(8);
+        this.setPdv(160+ (50 * niveau)) ;
     }
 
     @Override

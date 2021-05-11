@@ -13,6 +13,9 @@ public class Mystherbe extends Pokemon implements Plante {
 
     public Mystherbe(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(4);
+        this.setDefense(5);
+        this.setPdv(100+ (50 * niveau)) ;
     }
 
     @Override

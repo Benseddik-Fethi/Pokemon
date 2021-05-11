@@ -13,6 +13,9 @@ public class Ortide extends Pokemon  implements Plante {
 
     public Ortide(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(6);
+        this.setDefense(7);
+        this.setPdv(130+ (50 * niveau)) ;
     }
 
     @Override

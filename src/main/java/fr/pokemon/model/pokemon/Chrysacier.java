@@ -13,6 +13,9 @@ public class Chrysacier extends Pokemon implements Insecte {
 
     public Chrysacier(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(2);
+        this.setDefense(10);
+        this.setPdv(150+ (50 * niveau)) ;
     }
     @Override
     public int taillade() {

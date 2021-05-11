@@ -13,6 +13,9 @@ public class Roucarnage extends Pokemon implements Vol {
 
     public Roucarnage(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(7);
+        this.setDefense(8);
+        this.setPdv(160+ (50 * niveau)) ;
     }
     @Override
     public int tranchAir() {

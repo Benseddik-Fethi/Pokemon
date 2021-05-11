@@ -14,6 +14,9 @@ public class Arbok extends Pokemon implements Poison {
 
     public Arbok(String nom, int niveau) {
         super(nom, niveau);
+        this.setAttaque(7);
+        this.setDefense(8);
+        this.setPdv(160+ (50 * niveau)) ;
     }
 
     @Override
